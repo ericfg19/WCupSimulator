@@ -1,0 +1,20 @@
+.groups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countries-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100;
+}
+
+.group-text {
+    font-family: 'Calibri';
+    color: salmon;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 12px;
+}

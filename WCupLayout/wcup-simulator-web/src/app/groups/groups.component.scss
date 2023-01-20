@@ -1,0 +1,67 @@
+.groups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countries-row {
+    display: flex;
+    justify-content: space-between;
+    width: 860px;
+}
+
+.group-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.countries-column {
+    width: 200px;
+}
+
+.country {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: move;
+    background-color: whitesmoke;
+}
+
+.country:first-child {
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    background-color: #2ecc71 ;
+}
+
+.country:nth-child(2) {
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    background-color: #abebc6 ;
+}
+
+.country:last-child {
+    border-end-end-radius: 8px;
+    border-end-start-radius: 8px;
+}
+
+.flag {
+    width: 24px;
+    height: 24px;
+    border-radius: 14px;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    margin-left: 8px;
+}
+
+.country-name {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 8px;
+}
