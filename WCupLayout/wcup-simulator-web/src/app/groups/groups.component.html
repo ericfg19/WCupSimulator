@@ -1,30 +1,31 @@
 <div class="groups">
     <h1>Fase de Grupos</h1>
     <div class="countries-row">
-      <div class="group">
-        <h2 class="group-text">Grupo 1</h2>
-        <div class="countries-column">
+      <div class="group" *ngFor="let group of groups.slice(0, 4); let i = index">
+        <h2 class="group-text">Grupo {(i + 1)}</h2>
+        <div cdkDropList class="countries-column" (cdkDropListDropped)="drop($event, i)">
           
-            <div class="country">
-                <div class="flag"></div>
-                <span class="country-name">Brazil</span>
+            <div class="country" *ngFor="let country of group" cdkDrag>
+              <div class="placeholder" *cdkDragPlaceHolder ></div>
+                <div class="flag" [ngStyle]="{'background-image' : 'url(' + country.image + ')'}" ></div>
+                <span class="country-name">{{country.name}}</span>
             </div>
 
-            <div class="country">
-                <div class="flag"></div>
-                <span class="country-name">Brazil</span>
-            </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="country">
-                <div class="flag"></div>
-                <span class="country-name">Brazil</span>
+    <div class="countries-row">
+      <div class="group" *ngFor="let group of groups.slice(4, 8); let i = index";>
+        <h2 class="group-text">Grupo {{i + 4}}</h2>
+        <div cdkDropList class="countries-column" (cdkDropListDropped)="drop($event, i)">
+          
+            <div class="country" *ngFor="let country of group" cdkDrag>
+              <div class="placeholder" *cdkDragPlaceHolder ></div>
+              <div class="flag" [ngStyle]="{'background-image' : 'url(' + country.image + ')'}" ></div>
+                <span class="country-name">{{country.name}}</span>
             </div>
-
-            <div class="country">
-                <div class="flag"></div>
-                <span class="country-name">Brazil</span>
-            </div>
-
+                        
         </div>
       </div>
     </div>

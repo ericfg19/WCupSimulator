@@ -1,20 +1,56 @@
-.groups {
+.knockouts {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
-.countries-row {
+.row {
     display: flex;
-    justify-content: space-between;
-    width: 100;
+    justify-content: center;
 }
 
-.group-text {
-    font-family: 'Calibri';
-    color: salmon;
-    font-weight: 400;
-    font-size: 24px;
-    margin: 0;
-    margin-bottom: 12px;
+.cell {
+    width: 80px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.right {
+    right: 40px;
+    border-right: 3px solid;
+    border-top: 3px solid;
+}
+
+.left {
+    left: 40px;
+    border-left: 3px solid;
+    border-top: 3px solid;
+}
+
+.top {
+    bottom: 417px;
+    border-bottom: 3px solid;
+    border-top: none;
+}
+
+.bottom {
+    bottom: -14px;
+
+}
+
+.bar {
+    box-sizing: content-box;
+    border-radius: 0px;
+    border-color: #AAAA;
+    position: relative;
+    z-index: -1;
+    background: none;
 }
