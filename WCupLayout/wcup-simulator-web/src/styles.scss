@@ -4,5 +4,13 @@ html{
     background: linear-gradient(90deg, rgba(188,254,179,0.09211017170540092) 0%, rgba(220,248,204,0.753174597475709) 48%, rgba(210,254,175,0.0865079308090424) 100%); 
 }
 
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 30px;
+    width: 860px;
+}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
